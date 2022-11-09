@@ -44,6 +44,16 @@ export const packages: Package[] = [
     outputFile: 'react-router-rank-routes',
     globals: { react: 'React', '@tanstack/react-router': 'ReactRouter' },
   },
+  {
+    name: '@tanstack/solid-router',
+    packageDir: 'solid-router',
+    dependencies: ['@tanstack/router-core'],
+    srcDir: 'src',
+    jsName: 'SolidRouter',
+    entryFile: 'src/index.tsx',
+    outputFile: 'solid-router',
+    globals: { solid: 'Solid' },
+  },
 ]
 
 export const latestBranch = 'main'
@@ -70,7 +80,7 @@ export const branchConfigs: Record<string, BranchConfig> = {
 export const rootDir = path.resolve(__dirname, '..')
 export const examplesDirs = [
   'examples/react',
-  // 'examples/solid',
+  'examples/solid',
   // 'examples/svelte',
   // 'examples/vue',
 ]

@@ -317,6 +317,8 @@ export interface Router<
       location: BuildNextOptions & { replace?: boolean },
     ) => Promise<void>
   }
+  serialize: () => Promise<RouterSnapshot>
+  hydrate: (snapshot: RouterSnapshot) => void
 }
 
 // Detect if we're in the DOM

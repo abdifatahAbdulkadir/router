@@ -20,7 +20,8 @@
   },
   "workspaces": [
     "./packages/*",
-    "./examples/react/*"
+    "./examples/react/*",
+    "./examples/solid/*"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.9",
